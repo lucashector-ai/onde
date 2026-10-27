@@ -1,0 +1,23 @@
+/* Tailwind sem preflight: o design Onde traz o próprio reset em base.css */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+@import "../styles/base.css";
+@import "../styles/components.css";
+
+/* escopos de página (CSS nesting nativo) */
+@import "../styles/pages/evento.css";
+@import "../styles/pages/artista.css";
+@import "../styles/pages/entrar.css";
+@import "../styles/pages/meus-ingressos.css";
+@import "../styles/pages/checkout.css";
+@import "../styles/pages/institucional.css";
+@import "../styles/pages/explorar.css";
+
+@theme inline {
+  --color-ink: #111111;
+  --color-off: #f7f7f2;
+  --color-line: #eaeaea;
+  --color-mute: #6e6e73;
+  --color-acc: #d3f55b;
+}
